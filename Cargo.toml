@@ -1,0 +1,22 @@
+[package]
+name = "mock-func"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Small, ergonomic function and property mock utilities for Rust tests"
+readme = "README.md"
+repository = "https://github.com/SergeyPetrachkov/mock-func"
+homepage = "https://github.com/SergeyPetrachkov/mock-func"
+documentation = "https://docs.rs/mock-func"
+keywords = ["testing", "mock", "mocking", "unit-test"]
+categories = ["development-tools::testing"]
+
+[lib]
+path = "src/lib.rs"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[dev-dependencies]
+futures = "0.3"
